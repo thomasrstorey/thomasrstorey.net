@@ -1,0 +1,8 @@
+{
+  "type" : "development",
+  "name" : "nayar",
+  "title" : "Nayar",
+  "thumbnail" : "img/nayar_thumb.jpg",
+  "blurb" : "Full-stack web service for serving augmented reality content through Layar",
+  "date" : "9/1/2015"
+}
