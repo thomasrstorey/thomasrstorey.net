@@ -1,0 +1,85 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #EFEFEF;
+  color: #3F5765;
+  margin: 0 0 400px;
+}
+
+a {
+  color: #FF530D;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+}
+
+#header-container {
+border-bottom: 10px solid #BDD4DE;
+margin-bottom: 40px;
+}
+
+a:hover {
+  color: #FF530D;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  color: #2B3A42;
+}
+
+.navmenu-item h5 {
+  text-align: center;
+}
+
+#menu-column {
+  padding: 40px 0px;
+}
+
+#title-text {
+  padding: 30px 0px;
+}
+
+.navmenu-item.selected h5{
+  color: #FF530D;
+}
+
+.navmenu-item h5:hover{
+  color: #FF530D;
+}
+
+.navmenu-item.selected h5:hover{
+  color: #FF530D;
+}
+
+.footer {
+  background: #2B3A42;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+}
+
+.footermenu {
+  text-align: center;
+  margin: 125px 0px;
+}
+
+.footermenu-divider {
+  margin: 0px 10px;
+}
+
+.column-header {
+  text-align: center;
+}
