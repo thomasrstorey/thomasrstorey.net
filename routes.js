@@ -14,7 +14,7 @@ module.exports = function (app) {
       console.log(page);
       var data = JSON.parse(fs.readFileSync(path+req.params.page+".json"));
       // render page
-      res.render('pages/'+page, data);
+      res.render('pages/'+page, {page: data});
     }
   });
 

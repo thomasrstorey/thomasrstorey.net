@@ -83,3 +83,23 @@ h1, h2, h3, h4, h5, h6 {
 .column-header {
   text-align: center;
 }
+
+.category-entry {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*max-width: 320px;*/
+}
+.category-entry-info {
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: 0.0;
+  height: 280px;
+  padding: 20px;
+  transition: opacity 1s;
+}
+.category-entry-info:hover {
+  opacity: 1.0;
+}
+.category-entry-blurb {
+  color: #3F5765;
+}

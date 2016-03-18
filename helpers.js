@@ -37,7 +37,18 @@ module.exports = function () {
 
   self.renderColumn = function (pages) {
     var out = '';
-    // ...
+    pages.sort(function(a, b){
+      return Date.parse(b.date) - Date.parse(a.date);
+    });
+    pages.forEach(function (page) {
+      out += '<div class="category-row"><div class="twelve columns">'
+         +  '<a href="/'+page.name+'">'
+         + '<div class="category-entry" style="background-image: url(/'
+         +  page.thumbnail+');"><div class="category-entry-info">'
+         + '<h4 class="category-entry-title">'+page.title+"</h4>"
+         + '<p class="category-entry-blurb">'+page.blurb+"</p></div></div>"
+         + '</a></div></div>';
+    });
     return out;
   }
 
