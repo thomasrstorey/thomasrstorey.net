@@ -4,24 +4,16 @@ module.exports = function (app) {
   const path = 'views/pages/';
   const nodemailer = require('nodemailer');
 
-  var transporter = nodemailer.createTransport({
-    host : 'smtp.mailgun.org',
-    port : 465,
-    secure : true,
-    auth : {
-      user : 'postmaster@mg.thomasrstorey.net',
-      pass : '2bab7d56e3c1aadd95d341a9dfc09bd2'
-    }
-  });
+  var transporter = nodemailer.createTransport(require('./mg.config.js'));
   // POST request =============================================================
 
   app.post("/contact", function ( req, res, next ) {
     var mailOptions = {
       from : req.body.email,
       to : 'thomas@thomasrstorey.net',
-      subject : 'Contact regarding: ' + req.body.rea,
-      text: req.body.msg,
-      html: '<p>'+req.body.msg+'</p>'
+      subject : 'Contact regarding: ' + req.body.reason,
+      text: req.body.message,
+      html: '<p>'+req.body.message+'</p>'
     };
     transporter.sendMail(mailOptions, function(err, info){
       if(err){
