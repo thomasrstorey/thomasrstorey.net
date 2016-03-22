@@ -12,9 +12,14 @@ module.exports = function (app) {
       // get data for page
       const page = req.params.page;
       console.log(page);
-      var data = JSON.parse(fs.readFileSync(path+req.params.page+".json"));
-      // render page
-      res.render('pages/'+page, {page: data});
+      try{
+        var data = JSON.parse(fs.readFileSync(path+req.params.page+".json"));
+        // render page
+        res.render('pages/'+page, {page: data});
+      } catch (e) {
+        console.error(e);
+        next();
+      }
     }
   });
 

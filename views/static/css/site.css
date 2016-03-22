@@ -103,3 +103,21 @@ h1, h2, h3, h4, h5, h6 {
 .category-entry-blurb {
   color: #3F5765;
 }
+
+input[type="submit"].button-primary{
+  background-color: #FF530D;
+}
+
+input[type="submit"].button-primary:hover{
+  background-color: #FF641E;
+}
+
+input[type="submit"].button-primary:focus{
+  background-color: #FF641E;
+}
+
+#response-code {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}

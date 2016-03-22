@@ -1,0 +1,35 @@
+<section class="page-body">
+  <div class="container">
+    <div class="row">
+      <div class="offset-by-three six columns">
+        <h2>{{{page.title}}}</h2>
+        <form id="contact-form">
+        <div class="row">
+          <div class="six columns">
+            <label>Your email</label>
+            <input class="u-full-width" placeholder="test@mailbox.com" id="contact-email" type="email">
+          </div>
+          <div class="six columns">
+            <label>Nature of inquiry</label>
+            <select class="u-full-width" id="contact-reason">
+              <option value="Option 1">Development</option>
+              <option value="Option 2">Art</option>
+              <option value="Option 3">Academic</option>
+            </select>
+          </div>
+        </div>
+        <label>Message</label>
+        <textarea class="u-full-width" placeholder="Hi Thomas …" id="contact-message"></textarea>
+        <input class="button-primary" value="Submit" type="submit">
+      </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+<script>
+var contactForm = document.getElementById("contact-form");
+contactForm.addEventListener("submit", function ( event ){
+  event.preventDefault();
+}, false);
+</script>
