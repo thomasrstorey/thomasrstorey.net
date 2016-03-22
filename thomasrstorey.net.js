@@ -7,8 +7,10 @@ copyleft 2016
 const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
+const busboy = require('express-busboy');
 const log = console.log;
 const app = express();
+busboy.extend(app);
 
 var hbs = exphbs.create({
   defaultLayout : 'main',

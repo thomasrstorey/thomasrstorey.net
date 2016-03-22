@@ -3,24 +3,29 @@
     <div class="row">
       <div class="offset-by-three six columns">
         <h2>{{{page.title}}}</h2>
+        <p>Please use the form below to contact me via email, or send an email to <a href="mailto:storey.thomas@gmail.com">storey.thomas@gmail.com</a></p>
         <form id="contact-form">
+          <div class="row" id="response">
+
+          </div>
         <div class="row">
           <div class="six columns">
             <label>Your email</label>
-            <input class="u-full-width" placeholder="test@mailbox.com" id="contact-email" type="email">
+            <input class="u-full-width" placeholder="test@mailbox.com" id="contact-email" type="email" name="email">
           </div>
           <div class="six columns">
             <label>Nature of inquiry</label>
-            <select class="u-full-width" id="contact-reason">
-              <option value="Option 1">Development</option>
-              <option value="Option 2">Art</option>
-              <option value="Option 3">Academic</option>
+            <select class="u-full-width" id="contact-reason" name="reason">
+              <option value="dev">Development</option>
+              <option value="art">Art</option>
+              <option value="aca">Academic</option>
+              <option value="misc">Other</option>
             </select>
           </div>
         </div>
         <label>Message</label>
-        <textarea class="u-full-width" placeholder="Hi Thomas …" id="contact-message"></textarea>
-        <input class="button-primary" value="Submit" type="submit">
+        <textarea class="u-full-width" placeholder="Hi Thomas …" id="contact-message" name="message"></textarea>
+        <input class="button-primary" value="Submit" type="submit" id="contact-submit" disabled>
       </form>
       </div>
     </div>
@@ -29,7 +34,44 @@
 </section>
 <script>
 var contactForm = document.getElementById("contact-form");
+
+var email = document.getElementById("contact-email");
+var msg = document.getElementById("contact-message");
+var btn = document.getElementById("contact-submit");
+var res = document.getElementById("response");
+function validateInputs () {
+  if(email.value.match(/^[A-z0-9._%+-]+@[A-z0-9.-]+\.[a-z]{2,}$/) !== null
+    && msg.value.length > 1){
+    btn.removeAttribute("disabled");
+  } else {
+    btn.setAttribute("disabled", "true");
+  }
+}
+email.addEventListener("input", validateInputs);
+msg.addEventListener("input", validateInputs);
+
 contactForm.addEventListener("submit", function ( event ){
   event.preventDefault();
+  var fdata = new FormData(contactForm);
+  res.innerHTML = "<p><i class='fa fa-circle-o-notch fa-spin'></i></p>";
+  var cReq = new XMLHttpRequest();
+  cReq.addEventListener("load", function (resData) {
+    try {
+      var data = JSON.parse(resData.target.responseText);
+      if(data.err){
+        res.innerHTML = "<p class='message-error'>Email failed! Please try again. Thanks!</p>";
+      } else {
+        res.innerHTML = "<p class='message-success'>Thanks for getting in touch! I'll get back to you shortly.</p>";
+        email.value = "";
+        msg.value = "";
+        btn.setAttribute("disabled", "true");
+      }
+    } catch (e) {
+      res.innerHTML = "<p class='message-error'>Email failed! Please try again. Thanks!</p>";
+    }
+
+  });
+  cReq.open("POST", "/contact");
+  cReq.send(fdata);
 }, false);
 </script>

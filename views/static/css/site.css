@@ -106,18 +106,31 @@ h1, h2, h3, h4, h5, h6 {
 
 input[type="submit"].button-primary{
   background-color: #FF530D;
+  border-color:  #FF530D;
 }
 
 input[type="submit"].button-primary:hover{
   background-color: #FF641E;
+  border-color:  #FF530D;
 }
 
 input[type="submit"].button-primary:focus{
   background-color: #FF641E;
+  border-color:  #FF530D;
+}
+
+input[type="submit"].button-primary:disabled{
+  background-color: #BDD4DE;
+  border-color:  #BDD4DE;
 }
 
 #response-code {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+
+#response {
+  text-align: center;
+  font-size: 2rem;
 }
