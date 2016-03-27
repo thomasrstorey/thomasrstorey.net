@@ -4,5 +4,10 @@
   "title" : "Endlich",
   "thumbnail" : "img/endlich_thumb.jpg",
   "blurb" : "3D animated music video, 2012",
-  "date" : "5/1/2012"
+  "date" : "5/1/2012",
+  "images" : [
+          "img/endlich01.jpg",
+          "img/endlich02.jpg",
+          "img/endlich03.jpg"
+          ]
 }

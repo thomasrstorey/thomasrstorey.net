@@ -50,7 +50,16 @@ module.exports = function () {
          + '</a></div></div>';
     });
     return out;
-  }
+  };
+
+  self.renderSlideshow = function (images) {
+    var out = '<div id="slideshow-container">';
+    images.forEach(function (image){
+      out += '<div class="slide"><img class="slide-img" src="'+image+'"/>'
+         + '</div>';
+    });
+    return out+'</div><script src="js/slideshow.js" type="text/javascript"></script>';
+  };
 
   return self;
 }
