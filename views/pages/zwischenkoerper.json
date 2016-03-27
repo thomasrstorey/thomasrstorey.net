@@ -4,5 +4,10 @@
   "title" : "Zwischenkörper",
   "thumbnail" : "img/zwischenkoerper_thumb.jpg",
   "blurb" : "Hybrid augmented media installation, 2013",
-  "date" : "5/1/2013"
+  "date" : "5/1/2013",
+  "images" : [
+    "img/zwischenkoerper01.jpg",
+    "img/zwischenkoerper02.jpg",
+    "img/zwischenkoerper03.jpg"
+  ]
 }

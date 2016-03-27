@@ -37,7 +37,14 @@ module.exports = function (app) {
       try{
         var data = JSON.parse(fs.readFileSync(path+req.params.page+".json"));
         // render page
-        res.render('pages/'+page, {page: data});
+        res.render('pages/'+page, {page: data}, function (err, html){
+          if(err){
+            console.error(err);
+            next();
+          } else {
+            res.send(html);
+          }
+        });
       } catch (e) {
         console.error(e);
         next();
