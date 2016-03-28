@@ -4,5 +4,10 @@
   "title" : "Technology is Our Yoga Instructor",
   "thumbnail" : "img/tioyi_thumb.jpg",
   "blurb" : "WebGL website, 2013",
-  "date" : "12/1/2013"
+  "date" : "12/1/2013",
+  "images" : [
+    "img/tioyi01.jpg",
+    "img/tioyi02.jpg",
+    "img/tioyi03.jpg"
+  ]
 }

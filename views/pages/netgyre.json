@@ -4,5 +4,11 @@
   "title" : "Netgyre",
   "thumbnail" : "img/netgyre_thumb.jpg",
   "blurb" : "Persistent, multi-user internet installation, 2014",
-  "date" : "5/1/2014"
+  "date" : "5/1/2014",
+  "images" : [
+    "img/netgyre01.jpg",
+    "img/netgyre02.jpg",
+    "img/netgyre03.jpg",
+    "img/netgyre04.jpg"
+  ]
 }

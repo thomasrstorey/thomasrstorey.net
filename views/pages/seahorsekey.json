@@ -4,5 +4,10 @@
   "title" : "Seahorse Key",
   "thumbnail" : "img/seahorsekey_thumb.jpg",
   "blurb" : "Panoramic island tour, 2014",
-  "date" : "3/1/2014"
+  "date" : "3/1/2014",
+  "images" : [
+    "img/seahorsekey01.jpg",
+    "img/seahorsekey02.jpg",
+    "img/seahorsekey03.jpg"
+  ]
 }

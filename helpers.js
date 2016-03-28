@@ -55,8 +55,14 @@ module.exports = function () {
   self.renderSlideshow = function (images) {
     var out = '<div id="slideshow-container">';
     images.forEach(function (image){
-      out += '<div class="slide"><img class="slide-img" src="'+image+'"/>'
-         + '</div>';
+      out += '<a href="'+image+'">'
+         + '<div class="slide"><img class="slide-img" src="'+image+'"/>'
+         + '</div></a>';
+    });
+
+    out+='</div><div id="slide-button-container">';
+    images.forEach(function (image) {
+      out+='<div class="slide-button"></div>';
     });
     return out+'</div><script src="js/slideshow.js" type="text/javascript"></script>';
   };
