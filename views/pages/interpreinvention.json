@@ -4,5 +4,11 @@
   "title" : "Inter(pre|in)vention",
   "thumbnail" : "img/interp_thumb.jpg",
   "blurb" : "Internet installation, 2015",
-  "date" : "5/15/2015"
+  "date" : "5/15/2015",
+  "images" : [
+    "img/interp01.jpg",
+    "img/interp02.jpg",
+    "img/interp03.jpg",
+    "img/interp04.jpg"
+  ]
 }

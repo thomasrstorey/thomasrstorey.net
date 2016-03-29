@@ -4,5 +4,10 @@
   "title" : "Minusbook",
   "thumbnail" : "img/minusbook_thumb.jpg",
   "blurb" : "Chrome extension, 2014",
-  "date" : "6/1/2014"
+  "date" : "6/1/2014",
+  "images" : [
+    "img/minusbook01.jpg",
+    "img/minusbook02.jpg",
+    "img/minusbook03.jpg"
+  ]
 }

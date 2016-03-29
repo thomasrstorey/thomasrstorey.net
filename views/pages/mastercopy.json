@@ -4,5 +4,10 @@
   "title" : "Mastercopy (Mount Moran)",
   "thumbnail" : "img/mastercopy_thumb.jpg",
   "blurb" : "Sculpture and internet installation, 2014",
-  "date" : "7/1/2014"
+  "date" : "7/1/2014",
+  "images" : [
+    "img/mastercopy01.jpg",
+    "img/mastercopy02.jpg",
+    "img/mastercopy03.jpg"
+  ]
 }

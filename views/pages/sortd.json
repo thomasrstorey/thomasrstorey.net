@@ -1,0 +1,15 @@
+{
+  "type" : "artwork",
+  "name" : "sortd",
+  "title" : "Sort'd",
+  "thumbnail" : "img/sortd_thumb.jpg",
+  "blurb" : "Internet installation, 2015",
+  "date" : "7/1/2015",
+  "images" : [
+    "img/sortd01.jpg",
+    "img/sortd02.jpg",
+    "img/sortd03.jpg",
+    "img/sortd04.jpg",
+    "img/sortd05.jpg"
+  ]
+}
