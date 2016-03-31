@@ -4,5 +4,12 @@
   "title" : "normal",
   "thumbnail" : "img/normal_thumb.jpg",
   "blurb" : "Sculpture series, bronze, 2015",
-  "date" : "4/1/2015"
+  "date" : "4/1/2015",
+  "images" : [
+    "img/normal01.jpg",
+    "img/normal02.jpg",
+    "img/normal03.jpg",
+    "img/normal04.jpg",
+    "img/normal05.jpg"
+  ]
 }

@@ -4,5 +4,11 @@
   "title" : "Seamingly Invisible",
   "thumbnail" : "img/seaminglyinvisible_thumb.jpg",
   "blurb" : "Internet installation, print series, 2015",
-  "date" : "12/1/2015"
+  "date" : "12/1/2015",
+  "images" : [
+    "img/seaminglyinvisible01.jpg",
+    "img/seaminglyinvisible02.jpg",
+    "img/seaminglyinvisible03.jpg",
+    "img/seaminglyinvisible04.jpg"
+  ]
 }

@@ -4,5 +4,13 @@
   "title" : "Object Notation",
   "thumbnail" : "img/objnot_thumb.jpg",
   "blurb" : "Laser engraved plexiglass diptych, 2014",
-  "date" : "11/1/2014"
+  "date" : "11/1/2014",
+  "images" : [
+    "img/objnot01.jpg",
+    "img/objnot02.jpg",
+    "img/objnot03.jpg",
+    "img/objnot04.jpg",
+    "img/objnot05.jpg",
+    "img/objnot06.jpg"
+  ]
 }
