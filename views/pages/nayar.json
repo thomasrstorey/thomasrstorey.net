@@ -4,5 +4,11 @@
   "title" : "Nayar",
   "thumbnail" : "img/nayar_thumb.jpg",
   "blurb" : "Full-stack web service for serving augmented reality content through Layar",
-  "date" : "9/1/2015"
+  "date" : "9/1/2015",
+  "images" : [
+    "img/nayar01.jpg",
+    "img/nayar02.jpg",
+    "img/nayar03.jpg",
+    "img/nayar04.jpg"
+  ]
 }

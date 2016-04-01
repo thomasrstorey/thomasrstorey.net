@@ -4,5 +4,9 @@
   "title" : "Towering",
   "thumbnail" : "img/towering_thumb.jpg",
   "blurb" : "Internet installation, 2015",
-  "date" : "1/1/2015"
+  "date" : "1/1/2015",
+  "images" : [
+    "img/towering01.jpg",
+    "img/towering02.jpg"
+  ]
 }

@@ -4,5 +4,9 @@
   "title" : "Out of Order",
   "thumbnail" : "img/outoforder_thumb.jpg",
   "blurb" : "Android/iOS game developed in Unity",
-  "date" : "7/1/2014"
+  "date" : "7/1/2014",
+  "images" : [
+    "img/ooo01.jpg",
+    "img/ooo02.jpg"
+  ]
 }

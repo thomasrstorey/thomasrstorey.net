@@ -1,0 +1,12 @@
+{
+  "type" : "development",
+  "name" : "mandiberg",
+  "title" : "Mandiberg Studio Projects",
+  "thumbnail" : "img/printwikipedia_thumb.jpg",
+  "blurb" : "Project research, site updates and upgrades, codebase maintainence and upkeep",
+  "date" : "7/1/2015",
+  "images" : [
+    "img/mandiberg01.jpg",
+    "img/mandiberg02.jpg"
+  ]
+}
