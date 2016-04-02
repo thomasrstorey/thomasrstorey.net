@@ -4,5 +4,11 @@
   "title" : "Quick & Easy Recipes for Disaster",
   "thumbnail" : "img/quickandeasy_thumb.jpg",
   "blurb" : "Image metaphysics and the mediation of food through social media",
-  "date" : "3/14/2016"
+  "date" : "3/14/2016",
+  "images" : [
+    "img/recipesfordisaster01.jpg",
+    "img/recipesfordisaster02.jpg",
+    "img/recipesfordisaster03.jpg",
+    "img/recipesfordisaster04.jpg"
+  ]
 }

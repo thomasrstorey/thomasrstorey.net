@@ -14,20 +14,30 @@ var currentBtn = buttons[0];
 
 var clicked = null;
 var clickedBtn = null;
-
-for (var i = 0; i != slides.length; i++) {
-  if(i === 0){
-    slides[i].className = "slide slide-active slide-out";
-    buttons[i].className = "slide-button active";
-    slides[i].addEventListener("animationend", transition, false);
-  } else if (i === 1){
-    slides[i].className = "slide slide-active slide-in";
-  } else {
-    slides[i].className = "slide slide-queued";
+if(slides.length > 1){
+    for (var i = 0; i != slides.length; i++) {
+      if(i === 0){
+        slides[i].className = "slide slide-active slide-out";
+        buttons[i].className = "slide-button active";
+        slides[i].addEventListener("animationend", transition, false);
+      } else if (i === 1){
+        slides[i].className = "slide slide-active slide-in";
+      } else {
+        slides[i].className = "slide slide-queued";
+      }
+      buttons[i].id = i;
+      buttons[i].addEventListener("click", buttonTransition, false);
+    }
+} else {
+  for (var i = 0; i != slides.length; i++) {
+    if(i === 0){
+      slides[i].className = "slide slide-active";
+      buttons[i].className = "slide-button active";
+      slides[i].addEventListener("animationend", transition, false);
+    }
   }
-  buttons[i].id = i;
-  buttons[i].addEventListener("click", buttonTransition, false);
 }
+
 
 function transition ( e ) {
   if(e.animationName == "slidein" || e.animationName == "slideinnow"){

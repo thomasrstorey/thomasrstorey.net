@@ -4,5 +4,11 @@
   "title" : "Infinity Fab Lab Website",
   "thumbnail" : "img/uffablab_thumb.jpg",
   "blurb" : "Frontend development and CMS customization",
-  "date" : "2/1/2014"
+  "date" : "2/1/2014",
+  "images" : [
+    "img/fablab01.jpg",
+    "img/fablab02.jpg",
+    "img/fablab03.jpg",
+    "img/fablab04.jpg"
+  ]
 }

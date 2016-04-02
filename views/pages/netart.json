@@ -4,5 +4,8 @@
   "title" : "Net Art",
   "thumbnail" : "img/netart_thumb.jpg",
   "blurb" : "HTML, CSS and JavaScript introduction with history of Internet-based art",
-  "date" : "8/25/2015"
+  "date" : "8/25/2015",
+  "images" : [
+    "img/netart01.jpg"
+  ]
 }
